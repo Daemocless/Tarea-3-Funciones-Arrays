@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temporizador</title>
+  </head>
+
+  <body>
+    <header>
+      <p id="pares"></p>
+    </header>
+
+    <script>
+      const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const pares = numeros.filter((n) => n % 2 === 0);
+      console.log(pares);
+      document.getElementById("pares").innerHTML = pares;
+    </script>
+  </body>
+</html>

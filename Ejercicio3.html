@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temporizador</title>
+  </head>
+
+  <body>
+    <header>
+      <p id="resultado"></p>
+    </header>
+
+    <script>
+      const tags = ["js", "css", "js", "html", "css", "js", "react"];
+
+      const unicos = tags.filter((tag, index) => {
+        return tags.indexOf(tag) === index;
+      });
+
+      document.getElementById("resultado").innerHTML = unicos;
+    </script>
+  </body>
+</html>

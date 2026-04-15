@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temporizador</title>
+  </head>
+
+  <body>
+    <header>
+      <p id="resultado"></p>
+    </header>
+
+    <script>
+     const precios = [10, 25.5, 8.99, 100, 49.95];
+
+const conIVA = precios.map(p => Number((p * 1.21).toFixed(2)));
+
+document.getElementById("resultado").innerHTML = conIVA;
+    </script>
+  </body>
+</html>
