@@ -21,9 +21,7 @@
       ];
       const disponibles = productos.filter((p) => p.stock > 0);
 
-      document.getElementById("productos").innerHTML = disponibles.map(
-        (p) => p.nombre + " " + p.precio + "€",
-      );
+      console.log(disponibles)
     </script>
   </body>
 </html>
