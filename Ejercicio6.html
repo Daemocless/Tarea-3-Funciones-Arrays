@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+
+  <body>
+    <header>
+      <p id="resumen"></p>
+    </header>
+
+    <script>
+      const nombres = [
+        "ana garcia",
+        "luis perez",
+        "marta lopez",
+        "carlos ruiz",
+      ];
+      const re = /\s*(?:;|$)\s*/;
+
+      // Resultado esperado: ["GARCIA, Ana", "PEREZ,Luis", ...]
+      const formateados = nombres.map();
+      console.log(formateados);
+    </script>
+  </body>
+</html>
