@@ -18,10 +18,19 @@
         "marta lopez",
         "carlos ruiz",
       ];
-      const re = /\s*(?:;|$)\s*/;
+     // const re = /\s*(?:;|$)\s*/;
 
       // Resultado esperado: ["GARCIA, Ana", "PEREZ,Luis", ...]
-      const formateados = nombres.map();
+      //const formateados = nombres.map(nombres => nombres.split(re));
+
+      const formateados = nombres.map((nombres) => {
+        const parts = nombres.split(" ");
+        const nombre = parts[0];
+        const apellido = parts.length > 1 ? parts[parts.length - 1] : "";
+
+        return ""
+      });
+
       console.log(formateados);
     </script>
   </body>
