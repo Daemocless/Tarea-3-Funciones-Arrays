@@ -27,8 +27,7 @@
         const parts = nombres.split(" ");
         const nombre = parts[0];
         const apellido = parts.length > 1 ? parts[parts.length - 1] : "";
-
-        return ""
+        return `${apellido.toUpperCase()},${nombre}`
       });
 
       console.log(formateados);

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+
+  <body>
+    <header>
+      <p id="resumen"></p>
+    </header>
+
+    <script>
+           const gastos = [
+        { concepto: "Pizza",      categoria: "comida",   importe: 12 },
+        { concepto: "Bus",        categoria: "transporte", importe: 2.5 },
+        { concepto: "Sushi",      categoria: "comida",   importe: 18 },
+        { concepto: "Cine",       categoria: "ocio",     importe: 9  },
+        { concepto: "Taxi",       categoria: "transporte", importe: 8  },
+        { concepto: "Concierto",  categoria: "ocio",     importe: 35 },
+      ];
+      const porCategoria = gastos.reduce((
+        (acumulador, importe) => acumulador[categoria] + importe[importe],
+        {}));
+      console.log(porCategoria);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+
+  <body>
+    <header>
+      <p id="resumen"></p>
+    </header>
+
+    <script>
+      const precios = [12.5, 8.99, 45.0, 3.25, 22.8];
+      const total = precios.reduce(
+        (acumulador, precio) => acumulador + precio,
+        0,
+      );
+      console.log("Total:", total.toFixed(2));
+    </script>
+  </body>
+</html>
