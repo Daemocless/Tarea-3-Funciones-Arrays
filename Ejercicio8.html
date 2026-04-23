@@ -25,7 +25,6 @@
         if (!acumulador[gasto.categoria]) {
           acumulador[gasto.categoria] = 0;
         }
-
         acumulador[gasto.categoria] += gasto.importe;
         return acumulador;
       }, {});

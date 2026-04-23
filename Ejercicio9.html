@@ -12,7 +12,35 @@
     </header>
 
     <script>
-     
+      const gastos = [
+        { concepto: "Pizza", categoria: "comida", importe: 12 },
+        { concepto: "Bus", categoria: "transporte", importe: 2.5 },
+        { concepto: "Sushi", categoria: "comida", importe: 18 },
+        { concepto: "Cine", categoria: "ocio", importe: 9 },
+        { concepto: "Taxi", categoria: "transporte", importe: 8 },
+        { concepto: "Concierto", categoria: "ocio", importe: 35 },
+      ];
+
+      const palabras = [
+        "hola",
+        "mundo",
+        "hola",
+        "js",
+        "mundo",
+        "hola",
+        "filter",
+        "js",
+        "hola",
+      ];
+      const conteo = palabras.reduce((acumulador, palabra) => {
+        if (!acumulador[palabra]) {
+          acumulador[palabra] = 0;
+        }
+
+        acumulador[palabra] += 1;
+        return acumulador;
+      }, {});
+      console.log(conteo);
     </script>
   </body>
 </html>
