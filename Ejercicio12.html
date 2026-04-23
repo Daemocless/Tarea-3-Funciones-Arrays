@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+
+  <body>
+    <header>
+      <p id="resumen"></p>
+    </header>
+
+    <script>
+      const edades = [31, 5, 18, 42, 7, 23];
+      const frutas = ["mango", "apple", "kiwi", "banana"];
+      const edadesOrden = [...edades].sort(((a, b) => a - b));
+      const frutasOrden = [...frutas].sort((a, b) => a.localeCompare(b));
+      console.log(edadesOrden);
+      console.log(frutasOrden);
+    </script>
+  </body>
+</html>
