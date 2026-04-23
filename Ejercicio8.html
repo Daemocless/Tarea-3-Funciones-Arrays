@@ -12,17 +12,23 @@
     </header>
 
     <script>
-           const gastos = [
-        { concepto: "Pizza",      categoria: "comida",   importe: 12 },
-        { concepto: "Bus",        categoria: "transporte", importe: 2.5 },
-        { concepto: "Sushi",      categoria: "comida",   importe: 18 },
-        { concepto: "Cine",       categoria: "ocio",     importe: 9  },
-        { concepto: "Taxi",       categoria: "transporte", importe: 8  },
-        { concepto: "Concierto",  categoria: "ocio",     importe: 35 },
+      const gastos = [
+        { concepto: "Pizza", categoria: "comida", importe: 12 },
+        { concepto: "Bus", categoria: "transporte", importe: 2.5 },
+        { concepto: "Sushi", categoria: "comida", importe: 18 },
+        { concepto: "Cine", categoria: "ocio", importe: 9 },
+        { concepto: "Taxi", categoria: "transporte", importe: 8 },
+        { concepto: "Concierto", categoria: "ocio", importe: 35 },
       ];
-      const porCategoria = gastos.reduce((
-        (acumulador, importe) => acumulador[categoria] + importe[importe],
-        {}));
+
+      const porCategoria = gastos.reduce((acumulador, gasto) => {
+        if (!acumulador[gasto.categoria]) {
+          acumulador[gasto.categoria] = 0;
+        }
+
+        acumulador[gasto.categoria] += gasto.importe;
+        return acumulador;
+      }, {});
       console.log(porCategoria);
     </script>
   </body>
